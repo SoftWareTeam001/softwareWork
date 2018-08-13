@@ -1,0 +1,12 @@
+Page({
+ data:{
+    thisWeekMovie:{
+      name:"教父",
+      comment:"最精彩的剧本",
+      imagePath:"/images/test.jpg",
+      isHighlyRecommended:true
+    },
+    count:123,
+    score:59
+  }
+})

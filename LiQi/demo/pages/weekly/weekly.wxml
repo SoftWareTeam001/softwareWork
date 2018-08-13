@@ -1,0 +1,14 @@
+<view class="container"> 
+ <text>本周推荐</text>
+  <view class="movie">
+    <image class="movie-image"
+    src="{{thisWeekMovie.imagePath}}"></image>
+    <view class="movie-details">
+      <text>{{thisWeekMovie.name}}</text>
+      <text>{{thisWeekMovie.comment}}</text>
+      <text>{{(score>=60)?"及格":"不及格"}}</text>
+      <text hidden=
+      "{{!thisWeekMovie.isHighlyRecommended}}" style="font-size:16px ;color:red;">强烈推荐</text>
+    </view>
+  </view>
+</view>

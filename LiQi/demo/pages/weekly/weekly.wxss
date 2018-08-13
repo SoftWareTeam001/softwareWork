@@ -1,0 +1,11 @@
+.movie{
+  display:flex;
+}
+.movie-details{
+  display:flex;
+  flex-direction: column;
+}
+.movie-image{
+  width:200rpx;
+  height:200rpx;
+}
