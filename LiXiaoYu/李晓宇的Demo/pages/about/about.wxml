@@ -1,0 +1,8 @@
+<view class="container">
+<image class="about-banner" src="/images/illust_63413358_20170624_205355.jpg"></image>
+<text class="info"  id="zbc"  data-user-name="user">电影最TOP</text>
+<view>
+<text>我</text><navigator style='display:inline;' url='/pages/weekly/weekly' open-type='switchTab' hover-class='nav-hover' class='nav-default'>每周推荐</navigator><text>一部电影</text>
+</view>
+<text>yuxuangonzuoshi</text>
+</view>
