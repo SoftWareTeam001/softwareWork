@@ -1,0 +1,5 @@
+.weekly-banner{
+  width: 700rpx;
+  height: 400rpx;
+ 
+}

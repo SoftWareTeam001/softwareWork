@@ -1,0 +1,6 @@
+<view class='container'>
+<image skr="/images/jb.jpg"></image>
+<text>本周推荐</text>
+<text>教父</text>
+<text>点评：最精彩的剧本，最真实的黑帮电影。</text>
+</view>

@@ -1,0 +1,31 @@
+{
+  "pages":["pages/about/about","pages/weekly/weekly"],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "每周推荐",
+        "pagePath": "pages/weekly/weekly",
+        "iconPath": "images/weekly.png",
+        "selectedIconPath": "images/weekly-selected.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/about",
+        "iconPath": "images/about.png",
+        "selectedIconPath": "images/about-selected.png"
+      }
+    ]
+  },
+ "window": {
+   "navigationBarBackgroundColor": "#fff",
+   "navigationBarTextStyle": "black",
+   "navigationBarTitleText": "电影最TOP"
+  
+ }
+
+  
+}
