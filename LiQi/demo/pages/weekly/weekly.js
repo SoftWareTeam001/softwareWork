@@ -1,12 +1,12 @@
 Page({
  data:{
-    thisWeekMovie:{
-      name:"教父",
-      comment:"最精彩的剧本",
-      imagePath:"/images/test.jpg",
-      isHighlyRecommended:true
-    },
-    count:123,
-    score:59
+    thisWeekWallpaper:{
+      comment:"美爆了",
+      imagePath:"/images/9.png",
+      count: 123,
+      comment2: "黎明的曙光",
+      imagePath2: "/images/7.png",
+      count2: 113
+    }
   }
 })

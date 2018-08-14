@@ -9,3 +9,7 @@
   width:200rpx;
   height:200rpx;
 }
+.default{
+  font-weight: bold;
+  color:brown;
+}
