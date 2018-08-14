@@ -1,0 +1,36 @@
+<view style="text-align:center">一起漫聊吧</view>
+<button size='default' form-type='submit' type='warn' >我喜欢的动漫</button>
+<swiper indicator-dots='true' indicator-color='#fff' indicator-active-color='#0f0' autoplay='true'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+<block wx:for="{{icon_type}}">
+  <icon type='{{item}}' size='30' color='yellow'>
+  </icon>
+</block>
+<rich-text nodes='{{nodes}}'></rich-text>
+<view>--------------------------------------------------------------------------------------------</view>
+<button size='default' type='primary' form-type='submit' >你喜欢的动漫</button>
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</checkbox-group>
+<input auto-focus type='text' placeholder='请输入其他动漫' maxlength='-1' />
+<view class="section">
+  <view class="section__title" style="text-align:center" >你喜欢的动漫类型：</view>
+  
+  <picker mode="multiSelector" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker" style="color:red" >
+   我喜欢的类型： {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    </view>
+
+  </picker>
+</view>
+<view>--------------------------------------------------------------------------------------------</view>
+    <view><navigator url='/pages/tuijian/tuijian' class='nav-hover'>点击转到：秦时明月推荐</navigator></view>
+<slider min='0' max='100' step='1' value='30' color='yellow' selected-color='blue' >
+</slider>

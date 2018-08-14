@@ -1,0 +1,12 @@
+<view class='container'>
+ <image class='about-banner'
+ src="/images/timg.jpg"></image>
+ <text>复仇者联盟 </text>
+ <view>
+    <text>最全的</text>
+    <navigator style='display: inline;'
+     url='/pages/weekly/weekly' open-type='redirect'
+     hover-class='nav-hover' >英雄介绍</navigator>
+ </view>
+ <text>微博:@Teawang_s </text>
+</view>
