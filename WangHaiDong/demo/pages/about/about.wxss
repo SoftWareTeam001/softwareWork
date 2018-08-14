@@ -1,0 +1,10 @@
+
+
+  .about-banner{
+    width: 375rpx;
+    height: 375rpx;
+  }
+.nav-hover{
+ color: blue;
+
+}

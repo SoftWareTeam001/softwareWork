@@ -1,7 +1,13 @@
-<view class='container'>
-<text>本周推荐</text>
-<image class="weekly-banner" src='/images/jb.jpg'></image>
-<text>{{thisWeekMovie.name}}</text>
-<text>点评：{{thisWeekMovie.comment}}</text>
-<text wx:if='{{thisWeekMovie.isHighlyRecommended}} ' style='font-size:16px;color:red'>强烈推荐</text>
+<view class=''>
+<swiper class='movie-swiper' indicator-dots='{{true}}' previous-margin='50rpx' next-margin='50rpx'>
+<swiper-item class='movie' wx:for="{{weeklyMovieList}}">
+<view class="container movie-card">
+<image class="movie-image" src='{{item.imagePath}}'></image>
+<text>第{{index+1}}周:{{item.name}}</text>
+<text>点评：{{item.comment}}</text>
+<text wx:if='{{item.isHighlyRecommended}}' style='font-size:16px;color:red'>强烈推荐</text>
+</view>
+</swiper-item>
+</swiper>
+
 </view>

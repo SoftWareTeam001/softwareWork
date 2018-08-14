@@ -1,11 +1,11 @@
 <view class="container">
  <image class="about-banner"
  src="/images/test.jpg"></image>
- <text>电影周周看</text>
+ <text class="info">壁纸大全</text>
  <view>
    <text>我</text>
-   <navigator style="display:inline; color:green" url="/pages/weekly/weekly" open-type="switchTab" hover-class='nav-hover' class='nav-default'>每周推荐</navigator>
-   <text>一部好片</text>
+   <navigator style="display:inline" url="/pages/weekly/weekly" open-type="switchTab" hover-class='nav-hover' class='nav-default'>每周推荐</navigator>
+   <text>一些壁纸</text>
  </view>
- <text>我的微博</text>
+ <text>qq:123456789</text>
 </view>

@@ -1,0 +1,11 @@
+<view style="text-align:center">秦时明月推荐:</view>
+<rich-text nodes="{{nodes}}" style="color:yellow">主题曲欣赏</rich-text>
+<view>
+  <audio src='{{Asrc}}' controls author='{{Aauthor}}' poster='{{Aposter}}' name='{{Aname}}'></audio>
+</view>
+<view style="color:yellow">主角欣赏:</view>
+<image src="https://tse3-mm.cn.bing.net/th?id=OIP.XcnrcM7ewrC3nm-ttadNnAHaEn&w=258&h=164&c=7&o=5&dpr=1.25&pid=1.7" mode="scaleToFill"/>
+<image src="https://tse4-mm.cn.bing.net/th?id=OIP.oDS6OYmul6fqqzOBO9s6kgHaEK&w=300&h=168&c=7&o=5&dpr=1.25&pid=1.7" mode="scaleToFill"/>
+<view style="color:yellow">视频欣赏:</view>
+<video src='http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4' controls danmu-btn></video> 
+<view style="color:blue;font-size:30rpx">更多推荐敬请期待...</view>
