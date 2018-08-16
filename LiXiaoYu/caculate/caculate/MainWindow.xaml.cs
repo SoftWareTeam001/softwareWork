@@ -293,8 +293,8 @@ namespace caculate
                         break;
                     case '-':
                         postfixExpressionQueue.Dequeue();
-                        tempDouble = tempStack.Pop();
-                        tempStack.Push(tempStack.Pop() - temp);
+                        //tempDouble = tempStack.Pop();
+                        tempStack.Push(-tempStack.Pop() + tempStack.Pop());
                         break;
                     case '*':
                         postfixExpressionQueue.Dequeue();
