@@ -21,6 +21,7 @@ namespace caculator
     /// </summary>
     public partial class Window1 : Window
     {
+        public bool AlreayFinished = false;
         public Window1()
         {
             InitializeComponent();
@@ -28,41 +29,34 @@ namespace caculator
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
-            if (showPanel.Text.Length < 16)
+            if (AlreayFinished == true)
+            {
+                createNewCalculate();
+            }
+            if (showPanel.Text.Length < 160)
             {
                 Button button = (Button)sender;
                 showPanel.Text += button.Content.ToString();
             }
         }
-
-        private void equal(object sender, RoutedEventArgs e)
+        private void easyCalculate()
         {
             try
             {
                 string expression = showPanel.Text;
                 object datatable = new DataTable().Compute(expression, "");
-                MessageBox.Show(datatable.ToString());
-                showPanel.Text = "";
+                showResult(datatable.ToString());
+                AlreayFinished = true;
             }
             catch (Exception)
             {
                 MessageBox.Show("请检查输入");
             }
         }
-        //private void easyCalculate(string formula)
-        //{
-
-        //}
-        //private void handleBrackets(string formula)
-        //{
-        //    string pattern = @"(?<=\().+(?=\))";
-        //    MatchCollection match=Regex.Matches(formula, pattern);
-
-        //}
-        //private double handleOperator(string formula)
-        //{
-
-        //}
+        protected void equal(object sender, RoutedEventArgs e)
+        {
+            easyCalculate();
+        }
         private void clearContent(object sender, RoutedEventArgs e)
         {
             showPanel.Text = "";
@@ -75,6 +69,28 @@ namespace caculator
                 string text = showPanel.Text;
                 showPanel.Text = text.Remove(text.Length - 1);
             }
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (AlreayFinished == true)
+            {
+                createNewCalculate();
+            }
+            if (e.Key.ToString().Equals("Return"))
+            {
+                easyCalculate();
+            }
+        }
+        private void showResult(string result)
+        {
+            showResultPanel.Text = result;
+        }
+
+        private void createNewCalculate()
+        {
+            showPanel.Text = "";
+            AlreayFinished = false;
         }
     }
 }
