@@ -219,7 +219,7 @@ namespace caculate
                         signStack.Push(str[i]);
                     }
                     else                                // isn't empty
-                    {
+                    { 
                         if (str[i] == '(')
                         {
                             signStack.Push('(');
@@ -277,7 +277,7 @@ namespace caculate
             signStack.Clear();
             tempStr = "";
 
-            #region calculate the answer by pstfix expression
+            #region calculate the answer by postfix expression
 
             while (postfixExpressionQueue.Count > 0)
             {
@@ -325,3 +325,6 @@ namespace caculate
 
 
 }
+
+
+
