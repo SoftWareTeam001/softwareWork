@@ -59,7 +59,7 @@ namespace caculator
                 log.AddLog();
                 Log.CurrentLog = 1;
             }
-            catch(Exception e1)
+            catch (Exception e1)
             {
                 MessageBox.Show(e1.ToString());
             }
@@ -75,7 +75,7 @@ namespace caculator
 
         private void deleteContent(object sender, RoutedEventArgs e)
         {
-            if (showPanel.Text.Length>0)
+            if (showPanel.Text.Length > 0)
             {
                 string text = showPanel.Text;
                 showPanel.Text = text.Remove(text.Length - 1);
@@ -120,7 +120,7 @@ namespace caculator
                 showResult(result);
                 showFormula(formula);
             }
-            catch(Exception e1)
+            catch (Exception e1)
             {
                 MessageBox.Show("记录不存在!");
                 Log.CurrentLog -= 1;
@@ -149,9 +149,9 @@ namespace caculator
 
         private void MoveLeft(object sender, RoutedEventArgs e)
         {
-           
+
             showPanel.Select(showPanel.SelectionStart - 1, 0);
-            
+
         }
     }
 }
