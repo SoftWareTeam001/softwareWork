@@ -73,12 +73,12 @@
         
         <!--Additional-->
         <Button Grid.Column="4" Grid.Row="2" Content="π" Click="btn_Click"></Button>
-        <Button Grid.Column="4" Grid.Row="3" Content="◀" Click="btn_Click"></Button>
+        <Button Grid.Column="4" Grid.Row="3" Content="◀" Click="MoveLeft"></Button>
         <Button Grid.Column="4" Grid.Row="4" Content="sin(" Click="btn_Click"></Button>
         <Button Grid.Column="4" Grid.Row="5" Content="Ln(" Click="btn_Click"></Button>
         <Button Grid.Column="4" Grid.Row="6" Content="^2" Click="btn_Click"></Button>
-        <Button Grid.Column="5" Grid.Row="2" Content="▲" Click="btn_Click"></Button>
-        <Button Grid.Column="5" Grid.Row="3" Content="▼" Click="btn_Click"></Button>
+        <Button Grid.Column="5" Grid.Row="2" Content="▲" Click="lastLog"></Button>
+        <Button Grid.Column="5" Grid.Row="3" Content="▼" Click="nextLog"></Button>
         <Button Grid.Column="5" Grid.Row="4" Content="cos(" Click="btn_Click"></Button>
         <Button Grid.Column="5" Grid.Row="5" Content="Lg(" Click="btn_Click"></Button>
         <Button Grid.Column="5" Grid.Row="6" Content="^3" Click="btn_Click"></Button>
