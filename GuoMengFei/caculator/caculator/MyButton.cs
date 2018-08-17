@@ -8,8 +8,6 @@ namespace caculator
 {
     abstract class MyButton
     {
-        public string Content;
-        public string ShowContent;
         abstract public string ResultChange();
         abstract public string formulaChange();
     }

@@ -120,7 +120,7 @@ namespace caculator
                 showResult(result);
                 showFormula(formula);
             }
-            catch (Exception e1)
+            catch (Exception)
             {
                 MessageBox.Show("记录不存在!");
                 Log.CurrentLog -= 1;
@@ -140,7 +140,7 @@ namespace caculator
                 showResult(result);
                 showFormula(formula);
             }
-            catch (Exception e1)
+            catch (Exception)
             {
                 MessageBox.Show("记录不存在!");
                 Log.CurrentLog += 1;
@@ -149,8 +149,6 @@ namespace caculator
 
         private void MoveLeft(object sender, RoutedEventArgs e)
         {
-
-            showPanel.Select(showPanel.SelectionStart - 1, 0);
 
         }
     }
