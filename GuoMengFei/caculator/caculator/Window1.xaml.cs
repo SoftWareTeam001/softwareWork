@@ -151,5 +151,10 @@ namespace caculator
         {
 
         }
+
+        private void getAns(object sender, RoutedEventArgs e)
+        {
+            Log.CurrentLog = 1;
+        }
     }
 }
