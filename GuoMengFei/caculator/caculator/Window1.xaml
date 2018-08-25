@@ -72,20 +72,20 @@
         <Button Grid.Column="3" Grid.Row="6" Content="=" Click="equal"></Button>
 
         <!--Additional-->
-        <Button Grid.Column="4" Grid.Row="2" Content="π" Click="btn_Click"></Button>
-        <Button Grid.Column="4" Grid.Row="3" Content="◀" Click="MoveLeft"></Button>
-        <Button Grid.Column="4" Grid.Row="4" Content="sin(" Click="btn_Click"></Button>
-        <Button Grid.Column="4" Grid.Row="5" Content="Ln(" Click="btn_Click"></Button>
-        <Button Grid.Column="4" Grid.Row="6" Content="^2" Click="btn_Click"></Button>
+        <Button Grid.Column="4" Grid.Row="2" Content="π" Click="btn_Click" IsEnabled="False"></Button>
+        <Button Grid.Column="4" Grid.Row="3" Content="◀" Click="MoveLeft" IsEnabled="False"></Button>
+        <Button Grid.Column="4" Grid.Row="4" Content="sin(" Click="btn_Click" IsEnabled="False"></Button>
+        <Button Grid.Column="4" Grid.Row="5" Content="Ln(" Click="btn_Click" IsEnabled="False"></Button>
+        <Button Grid.Column="4" Grid.Row="6" Content="^2" Click="btn_Click" IsEnabled="False"></Button>
         <Button Grid.Column="5" Grid.Row="2" Content="▲" Click="lastLog"></Button>
         <Button Grid.Column="5" Grid.Row="3" Content="▼" Click="nextLog"></Button>
-        <Button Grid.Column="5" Grid.Row="4" Content="cos(" Click="btn_Click"></Button>
-        <Button Grid.Column="5" Grid.Row="5" Content="Lg(" Click="btn_Click"></Button>
-        <Button Grid.Column="5" Grid.Row="6" Content="^3" Click="btn_Click"></Button>
-        <Button Grid.Column="6" Grid.Row="2" Content="Ans" Click="btn_Click" FontWeight="Bold" ></Button>
-        <Button Grid.Column="6" Grid.Row="3" Content="▶" Click="btn_Click"></Button>
-        <Button Grid.Column="6" Grid.Row="4" Content="tan(" Click="btn_Click"></Button>
-        <Button Grid.Column="6" Grid.Row="5" Content="e" Click="btn_Click" FontStyle="Italic"></Button>
-        <Button Grid.Column="6" Grid.Row="6" Content="√" Click="btn_Click"></Button>
+        <Button Grid.Column="5" Grid.Row="4" Content="cos(" Click="btn_Click" IsEnabled="False"></Button>
+        <Button Grid.Column="5" Grid.Row="5" Content="Lg(" Click="btn_Click" IsEnabled="False"></Button>
+        <Button Grid.Column="5" Grid.Row="6" Content="^3" Click="btn_Click" IsEnabled="False"></Button>
+        <Button Grid.Column="6" Grid.Row="2" Content="Ans" Click="getAns" FontWeight="Bold" IsEnabled="False"></Button>
+        <Button Grid.Column="6" Grid.Row="3" Content="▶" Click="btn_Click" IsEnabled="False"></Button>
+        <Button Grid.Column="6" Grid.Row="4" Content="tan(" Click="btn_Click" IsEnabled="False"></Button>
+        <Button Grid.Column="6" Grid.Row="5" Content="e" Click="btn_Click" FontStyle="Italic" IsEnabled="False"></Button>
+        <Button Grid.Column="6" Grid.Row="6" Content="√" Click="btn_Click" IsEnabled="False"></Button>
     </Grid>
 </Window>

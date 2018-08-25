@@ -156,5 +156,10 @@ namespace caculator ///caculator实际意为calculator
             string text = showPanel.Text;
             showPanel.Text = text.Remove(text.Length - 1);          
         }
+
+        private void getAns(object sender, RoutedEventArgs e)
+        {
+            Log.CurrentLog = 1;
+        }
     }
 }
