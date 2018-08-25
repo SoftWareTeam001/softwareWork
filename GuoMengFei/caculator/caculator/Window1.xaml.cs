@@ -15,7 +15,7 @@ using System.Text.RegularExpressions;
 using System.Data.SqlClient;
 using System.Data;
 using System.IO;
-namespace caculator
+namespace caculator ///caculator实际意为calculator
 {
     /// <summary>
     /// Window1.xaml 的交互逻辑
@@ -146,10 +146,15 @@ namespace caculator
                 Log.CurrentLog += 1;
             }
         }
-
+        /// <summary>
+        /// 光标移动（待完成呢）
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MoveLeft(object sender, RoutedEventArgs e)
-        {
-
+        {                   
+            string text = showPanel.Text;
+            showPanel.Text = text.Remove(text.Length - 1);          
         }
     }
 }

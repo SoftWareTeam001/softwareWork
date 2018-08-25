@@ -23,8 +23,7 @@
         #region Windows 窗体设计器生成的代码
 
         /// <summary>
-        /// 设计器支持所需的方法 - 不要修改
-        /// 使用代码编辑器修改此方法的内容。
+        /// 
         /// </summary>
         private void InitializeComponent()
         {
@@ -338,4 +337,4 @@
         private System.Windows.Forms.Button button20;
     }
 }
-
+//text显示只有一个按钮的内容或者运算结果
