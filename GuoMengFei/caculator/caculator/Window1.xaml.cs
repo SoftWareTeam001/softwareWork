@@ -154,7 +154,7 @@ namespace caculator ///caculator实际意为calculator
         private void MoveLeft(object sender, RoutedEventArgs e)
         {                   
             string text = showPanel.Text;
-            showPanel.Text = text.Remove(text.Length - 1);          
+            showPanel.Text = text.Remove(text.Length - 1); //将光标左移动一格         
         }
 
         private void getAns(object sender, RoutedEventArgs e)
