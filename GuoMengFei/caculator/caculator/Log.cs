@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Windows;
 using System.Text.RegularExpressions;
+//reactor
 namespace caculator
 {
     class Log
