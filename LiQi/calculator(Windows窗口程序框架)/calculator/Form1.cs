@@ -72,7 +72,7 @@ namespace calculator
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            str=
+           
         }
 
         private void button12_Click(object sender, EventArgs e)
